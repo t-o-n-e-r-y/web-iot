@@ -1,0 +1,40 @@
+/* css phần body */
+.body
+{
+    height: 750px;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+    padding: 130px 0px 30px 0px;
+}
+
+.body_container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: white;
+    height: 750px; 
+}
+
+.body_container_graph{
+    margin: 30px 20px 30px 30px;
+    width: 750px;
+}
+
+.body_container_graph-img{
+    height: 500px;
+    border: solid black 2px;
+}
+
+.body_container_graph-mota{
+    margin: 30px 0px;
+    border: solid black 2px;
+    height: 160px;
+}
+
+.body_container_sensor{
+    margin: 30px;
+    width: 340px;
+    height: 690px;
+    border: solid black 2px;
+}

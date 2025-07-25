@@ -1,0 +1,175 @@
+
+/* css mặc đinh */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+a {
+  color: inherit;          /* Hoặc dùng color: black; để ép màu đen */
+  text-decoration: none;   /* Bỏ gạch chân */
+}
+h2,h4{
+    margin: 15px 0px;
+}
+
+
+/* css phần header */
+.header{
+    width: 100%;
+    background: #76eb76;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* đặt vị trí cuộn cao nhất */
+    z-index: 2403;  
+}
+
+.header_container{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    /* lệnh này giúp căn khoảng cách các khối con bằng nhau trong khối cha theo chiều ngang */
+    justify-content: space-between;   
+    border: solid black 2px;   
+    padding: 0px;
+}
+
+.header_container_logo{
+    width: 300px;
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.header_container_contact{
+    width: 100px;
+    border: solid black 2px;
+    border-radius: 20px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 30px;
+    padding: 2px 5px;
+}
+
+.header_container-nav-item{
+    border: solid black 2px;
+    border-radius: 20px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+.header_container-nav{
+    display: flex;
+    width: 400px;
+    border: solid black 2px;
+}
+
+/* css phần body */
+.body
+{
+    height: 940px;
+    background-color: rgb(234, 234, 234);
+    width: 100%;
+    padding: 130px 0px 30px 0px;
+}
+.body_container{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: white;
+    height: 940px;
+
+}
+
+.body_container_list
+{
+    width: 200px;
+    margin: 30px 50px 30px 50px;
+    border: solid rgb(200, 200, 200) 2px;
+    background-color:rgb(234, 234, 234) ;
+}
+
+.body_container_dashboarh{
+    width: 850px;
+    margin: 30px 50px 30px 0px;
+    border: solid rgb(200, 200, 200) 2px;
+    background-color:rgb(234, 234, 234) ;
+}
+
+.body_container_dashboarh-news{
+    margin: 30px;
+    background-color: white;
+    border: solid rgb(228, 228, 228) 2px;
+    height: 220px;
+}
+
+.body_container_dashboarh-sensor{
+    margin: 50px 30px;
+    border: solid rgb(228, 228, 228) 2px;
+    height: 417px;
+}
+
+.sensor1,.sensor2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sensor1{
+    margin-bottom: 17px;
+}
+
+.sensor_item
+{
+    background-color: white;
+    width: 250px;
+    height: 200px;;
+}
+
+.dht11{
+    display: flex;
+    flex-direction: column;    /* Xếp dọc */
+    align-items: center;       /* Căn giữa theo chiều ngang */
+    justify-content: center;   /* Căn giữa theo chiều dọc (nếu muốn toàn khối giữa) */
+}
+
+.body_container_next{
+    display: flex;
+    width: 500px;
+    margin: auto;
+    border: solid rgb(255, 255, 255) 2px;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.body_container_next-item{
+    height: 30px;
+    border: solid rgb(231, 230, 230) 2px;
+    background-color: #ffffff;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.body_container_next-page{
+    display: flex;
+    width: 220px;
+    justify-content: space-between;
+}
+
+/* css phần footer */
+.footer{
+    height: 200px;
+    border: solid brown 2px;
+}

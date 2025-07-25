@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #fff;
+      }
+
+      .login-container {
+        width: 100%;
+        max-width: 320px;
+        padding: 30px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        text-align: center;
+      }
+
+      h2 {
+        margin-bottom: 20px;
+        color: #2c2c54;
+        font-size: 24px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px 10px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+      }
+
+      .options {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .options a {
+        text-decoration: none;
+        color: #8e44fd;
+        font-size: 13px;
+      }
+
+      button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #8e44fd;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #6c2ed9;
+      }
+
+      label {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>LOGIN</h2>
+      <form action="/login" method="post">
+        <input
+          type="text"
+          name="username"
+          placeholder="Tên đăng nhập"
+          autocomplete="off"
+        /><br />
+        <input type="password" name="password" placeholder="Mật khẩu" /><br />
+        <button type="submit">đăng nhập</button>
+      </form>
+    </div>
+  </body>
+</html>

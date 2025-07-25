@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/dashboarh.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Tạo phần header -->
+    <header>
+        <div class="header">
+            <div class="header_container">
+                <div class="header_container_logo">
+                    <img src="/img/logo.png" alt="logo" height="100px">
+                    <div class="header_container_contact"><a href="/index.html">logout</a></div>
+                </div>
+                <nav class="header_container-nav">
+                    <div class="header_container-nav-item">giải pháp nhà thông minh</div>
+                    <div class="header_container-nav-item">đồ dùng thông minh</div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tạo phần body -->
+    <div class="body">
+        <div class="body_container">
+            <div class="body_container_list">danh sách</div>
+            <div class="body_container_dashboarh">
+                <div class="body_container_dashboarh-news">news</div>
+                <div class="body_container_dashboarh-sensor">
+                    <div class="sensor1">
+                        <a href="./dht11.html">
+                            <div class="sensor_item dht11">
+                                <h2>🌡️ Nhiệt độ: <span id="temp">--</span>°C</h2>
+                                <h2>💧 Độ ẩm: <span id="humi">--</span>%</h2>
+                                <h4>🕒 Cập nhật lúc: <span id="time">--:--:--</span></h4>
+                            </div>
+                        </a>
+                        <div class="sensor_item">
+                            <div>
+                            <h3>Trạng thái LED: <span id="led-status">unknown</span></h3>
+                            <button id="btn-on">Bật LED</button>
+                            <button id="btn-off">Tắt LED</button>
+                            </div>
+                        </div>
+                        <a href="./dht11.html" target="_blank">
+                            <div class="sensor_item">sensor 3</div>
+                        </a>
+                    </div>
+                    <div class="sensor2">
+                        <a href="./dht11.html" target="_blank">
+                            <div class="sensor_item">sensor 4</div>
+                        </a>
+                        <a href="./dht11.html" target="_blank">
+                            <div class="sensor_item">sensor 5</div>
+                        </a>
+                        <a href="./dht11.html" target="_blank">
+                            <div class="sensor_item">sensor 6</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="body_container_next">
+                    <div class="body_container_next-item"><i class="fa-solid fa-backward-step"></i></div>
+                    <div class="body_container_next-page">
+                        <div class="body_container_next-item"><b>2</b></div>
+                        <div class="body_container_next-item"><b>3</b></div>
+                        <div class="body_container_next-item"><b>4</b></div>
+                    </div>
+                    <div class="body_container_next-item"><i class="fa-solid fa-forward-step"></i></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Tạo phần footer -->
+    <footer>
+        <div class="footer">đây là footer</div>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main_dht11.js"></script>
+    <script src="/js/main_led.js"></script>
+</body>
+</html>

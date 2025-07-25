@@ -1,0 +1,75 @@
+/* css mặc đinh */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+a {
+  color: inherit;          /* Hoặc dùng color: black; để ép màu đen */
+  text-decoration: none;   /* Bỏ gạch chân */
+}
+
+
+/* css phần header */
+.header{
+    width: 100%;
+    background: #76eb76;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    /* đặt vị trí cuộn cao nhất */
+    z-index: 2403;  
+}
+
+.header_container{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    /* lệnh này giúp căn khoảng cách các khối con bằng nhau trong khối cha theo chiều ngang */
+    justify-content: space-between;   
+    border: solid black 2px;   
+    padding: 0px;
+}
+
+.header_container_logo{
+    width: 300px;
+    border: solid black 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+.header_container_contact{
+    width: 100px;
+    border: solid black 2px;
+    border-radius: 20px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 30px;
+    padding: 2px 5px;
+}
+
+.header_container-nav-item{
+    border: solid black 2px;
+    border-radius: 20px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 5px;
+}
+
+.header_container-nav{
+    display: flex;
+    width: 400px;
+    border: solid black 2px;
+}
+
+/* css phần footer */
+.footer{
+    height: 200px;
+    border: solid brown 2px;
+}

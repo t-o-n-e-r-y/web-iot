@@ -1,0 +1,311 @@
+/* === Reset === */
+body {
+    margin: 0;
+    padding: 0;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+p {
+    text-align: justify;
+    font-size: 19px;
+    color: #434343;
+}
+h1{
+    font-size: 40px;
+    color: #00B33D;
+}
+
+
+/* === Header === */
+.header {
+    background:#433878;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+/* === .header_container === */
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 1200px;
+}
+
+/* === .header_container_nav === */
+.header_container_nav {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    justify-content: space-between;
+}
+
+/* === .header_container_logo === */
+.header_container_logo {
+    height: 77px;
+    width: 200px;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+/* === .header_container_nav-block === */
+.header_container_nav-block {
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* === .header_container_nav-item (dùng chung) === */
+.header_container_nav-item {
+    color: white;
+    padding: 0px 12px;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    font-weight: 500;
+    background-color: transparent;
+    transition: all 0.2s ease;
+}
+
+/* Hover effect dùng chung */
+.pausedo:hover {
+    font-weight: 900;
+    color: rgb(1, 228, 253);
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255);
+}
+
+/* === .nav-item1 === */
+.nav-item1 {
+    flex: 0 0 100px;
+}
+
+/* === .nav-item-wrapper (bao nav-item2 và dropdown) === */
+.nav-item-wrapper {
+    position: relative;
+    flex: 0 0 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+}
+
+/* Hover cầu nối giữ khoảng cách */
+.nav-item-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    height: 12px;
+    width: 100%;
+    background: transparent;
+}
+
+/* === .nav-item2 === */
+.nav-item2 {
+    width: 100%;
+    height: 100%;
+}
+
+/* === .nav_production === */
+.nav_production {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px); /* cách nút 12px */
+    left: 0;
+    width: 500px;
+    padding: 16px 24px;
+    background-color: aqua;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+/* Khi hover vào wrapper thì hiện dropdown */
+.nav-item-wrapper:hover .nav_production {
+    display: block;
+}
+
+/* === .body_production-item === */
+.nav_production-item {
+    padding: 4px 0;
+    font-size: 16px;
+    color: black;
+    transition: background-color 0.4s ease;
+}
+
+/* Hover từng dòng sản phẩm */
+.nav_production-item:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* === .header_container_log === */
+.header_container_log {
+    display: flex;
+    align-items: center;
+}
+
+/* === .header_container_log-item === */
+.header_container_log-item {
+    color: white;
+    width: 90px;
+    padding: 4px 10px;
+    border: solid black 2px;
+    border-radius: 20px;
+    height: 28px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(87, 253, 145, 0.826);
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.header_container_log-item:hover {
+    background-color: white;
+    color: green;
+    font-weight: bold;
+}
+
+
+
+/* ======================================================================================= */
+/* === BODY === */
+.body{
+    background-color: rgb(232, 232, 232);
+    display: flex;
+    justify-content: center;
+}
+
+.body_information{
+    border: solid black 2px;
+    width: 1200px;
+    background: #ffffff;
+    height: 720px;
+    background: linear-gradient(to bottom, #ecf6f0, #dffde1); 
+}
+
+.body_information_introduction{
+    display: flex;
+}
+
+.body_information_introduction-img{
+    margin: 28px;
+    border: solid black 2px;
+}
+
+.body_information_introduction-paragraph{
+    margin: 30px;
+    width: 600px;
+    height: 400px;
+    border: solid black 2px;
+    background: linear-gradient(to bottom, #E0FFED, #ffffff);
+}
+
+.body_container{
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+
+}
+
+.body_container_item{
+    width: 195px;
+    height: 170px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px 1px 0.5px 1px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #88f4bc, #ffffff);
+    font-size: 20px;
+    font-weight: bold;
+    color: #38804d;
+}
+
+.body_company{
+    width: 1200px;
+    height: 560px;
+    border: solid black 2px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body_company_container{
+    margin: 30px;
+    height: 500px;
+    border: solid black 2px;
+}
+
+.body_company_container-title{
+    margin-top: 40px;
+}
+
+.body_company_paragraph{
+    margin: 100px 30px 0px 20px;
+    border: solid black 2px;
+    height: 430px;
+}
+
+.body_company_paragraph_information{
+    display: flex;
+    justify-content: space-between;
+}
+
+.body_company_paragraph_information-item{
+    width: 180px;
+    border: solid rgb(96, 250, 160) 2px;
+    margin-bottom: 20px;
+    padding: 0px 20px;
+    border-radius: 40px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #88f4bc, #ffffff);
+    flex: 0 0 180px;
+}
+
+.body_company_paragraph_information-item p{
+    font-size: 16px;
+    padding: 0px;
+    color: black;
+    color: #38804d;
+    font-weight: bold;
+}
+
+.body_company_paragraph_information-item:hover {
+    background: #fff7a4;
+    border: solid rgb(108, 112, 110) 2px;
+}
+
+.body_company_paragraph_information-item:hover p {
+    color: #cd29ff;
+    font-size: 17px;
+}
+
+.body_compare{
+    width: 1200px;
+    height: 560px;
+    border: solid black 2px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
